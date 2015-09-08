@@ -958,14 +958,14 @@
     nextTooltipButton.removeAttribute('tabIndex');
 
     if (this._currentStep == 0 && this._introItems.length > 1) {
-      prevTooltipButton.className = 'introjs-button introjs-prevbutton introjs-disabled';
+      prevTooltipButton.className = 'introjs-button introjs-prevbutton introjs-disabled firstSlide';
       prevTooltipButton.tabIndex = '-1';
       nextTooltipButton.className = 'introjs-button introjs-nextbutton';
       skipTooltipButton.innerHTML = this._options.skipLabel;
     } else if (this._introItems.length - 1 == this._currentStep || this._introItems.length == 1) {
       skipTooltipButton.innerHTML = this._options.doneLabel;
-      prevTooltipButton.className = 'introjs-button introjs-prevbutton';
-      nextTooltipButton.className = 'introjs-button introjs-nextbutton introjs-disabled';
+      prevTooltipButton.className = 'introjs-button introjs-prevbutton lastSlidePrevButton';
+      nextTooltipButton.className = 'introjs-button introjs-nextbutton introjs-disabled lastSlide';
       nextTooltipButton.tabIndex = '-1';
     } else {
       prevTooltipButton.className = 'introjs-button introjs-prevbutton';
