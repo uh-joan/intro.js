@@ -344,3 +344,14 @@ tr.introjs-showElement > th {
   left: 50%;
   top: 50%;
 }
+
+.lastSlide, .firstSlide {
+display:none;
+}
+
+.lastSlidePrevButton {
+border-right:1px solid #d4d4d4;
+-webkit-border-radius: .2em;
+-moz-border-radius: .2em;
+border-radius: .2em;
+}
